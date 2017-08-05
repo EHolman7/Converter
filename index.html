@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="main">
+	<h1>Temperature Converter</h1>
+
+	<form id="tempForm">
+		Temperature
+		<input type="text" name="tempInput" id="tempInput">
+	<br>
+	Convert to:
+  <input type="radio" name="radioTemp" id="radioCelsius" value="Celsius"> Celsius
+  <input type="radio" name="radioTemp" id="radioFahrenheit" value="Fahrenheit"> Fahrenheit
+  <br>
+
+	<button type="button" id="determineConverter"> Convert</button>
+
+
+<h2 id="returnTemp"></h2>
+
+	<input type="button" value="Refresh" onClick="window.location.reload()">
+</form>
+</div>
+	<script type="text/javascript" src="converter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+html { 
+  background: url(Temp.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#hot {
+	color: red;
+}
+#cold {
+	color: blue;
+}
+#medium {
+	color: green;
+}
+#main {
+	text-align: center;
+	background-color: rgba(0,0,255,.5);
+	font-family: 'Cabin', sans-serif;
+	font-size: 22px;
+	color: coral;
+	line-height: 100%;
+	padding: 50px 30px 50px 80px;
+	border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+	border-radius: 25px;
+}
+#tempForm {
+	border: solid;
+	text-align: center;
+}
