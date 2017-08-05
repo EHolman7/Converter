@@ -1,15 +1,25 @@
 var tempInput = document.getElementById("tempInput");
 var radioCelsius = document.getElementById("radioCelsius");
 var radioFahrenheit = document.getElementById("radioFahrenheit");
+var returnTemp = document.getElementById("returnTemp")
+var domstring = "";
 
-function toCelsius (tempInput) {
+function toCelsius (tempInput2) {
+	var tempInput = parseInt(tempInput2.value);
 	var celsius = (tempInput - 32) / 1.8;
-	returnTemp.innerHTML = celsius;
+	returnTemp.innerHTML = (celsius * 100) / 100;
+	celsius > 32 ? returnTemp.style.color = "red"
+       : (celsius < 0 ? returnTemp.style.color = "blue"
+         : returnTemp.style.color = "green");
 }
 
-function toFahrenheit () {
-	var fahrenheit = (tempInput * 1.8) / 32;
-	returnTemp.innerHTML = fahrenheit;
+function toFahrenheit (tempInput2) {
+	var tempInput = parseInt(tempInput2.value);
+	var fahrenheit = (tempInput * 1.8) + 32;
+	returnTemp.innerHTML = (fahrenheit * 100) / 100;
+	fahrenheit > 90 ? returnTemp.style.color = "red"
+       : (fahrenheit < 32 ? returnTemp.style.color = "blue"
+         : returnTemp.style.color = "green");
 }
 
 function determineConverter () {

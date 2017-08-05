@@ -5,26 +5,26 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
+<div id="main">
 	<h1>Temperature Converter</h1>
 
-	<form>
+	<form id="tempForm">
+		Temperature
 		<input type="text" name="tempInput" id="tempInput">
-	</form>
-
-	<form action="">
-  <input type="radio" name="radioTemp" id="radioCelsius" value="Celsius"> Celsius<br>
+	<br>
+	Convert to:
+  <input type="radio" name="radioTemp" id="radioCelsius" value="Celsius"> Celsius
   <input type="radio" name="radioTemp" id="radioFahrenheit" value="Fahrenheit"> Fahrenheit
-</form>
+  <br>
 
-<form>
 	<button type="button" id="determineConverter"> Convert</button>
-</form>
 
-<form>
-	<button type="button" id="reset"> Reset</button>
-</form>
 
+<h2 id="returnTemp"></h2>
+
+	<input type="button" value="Refresh" onClick="window.location.reload()">
+</form>
+</div>
 	<script type="text/javascript" src="converter.js"></script>
 
 </body>
