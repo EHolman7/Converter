@@ -43,9 +43,8 @@ function determineConverter () {
 document.getElementById("determineConverter").addEventListener("click", determineConverter);
 
 //   To convert temp when the Enter key is pressed
-document.getElementById("determineConverter").addEventListener("keypress", enterPressed);
-function enterPressed(k) {
-    if (k.key === "Enter")
+document.getElementById("determineConverter").addEventListener("keypress", function(enter) {
+    if (enter.key === "Enter")
         returnTemp();
 }
 
